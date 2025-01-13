@@ -16,7 +16,7 @@ return new class extends Migration
             
             $table->string('officerName')->nullable();
             $table->text('designation')->nullable();
-            $table->string('department')->nullable();
+            $table->unsignedBigInteger('departmentId')->nullable();
             $table->string('signature')->nullable();
            
             $table->timestamps();

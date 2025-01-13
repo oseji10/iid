@@ -16,12 +16,15 @@ return new class extends Migration
             $table->unsignedBigInteger('extractId')->nullable();
             $table->text('description')->nullable();
             $table->string('year')->nullable();
-            $table->string('countryOforigin')->nullable();
-            $table->string('cost_fob')->nullable();
-            $table->string('cost_cif')->nullable();
+            $table->string('countryOfOrigin')->nullable();
+            $table->string('costFob')->nullable();
+            $table->string('costCif')->nullable();
+            $table->string('currency')->nullable();
             $table->string('exchangeRate')->nullable();
             $table->text('nairaValue')->nullable();
-            
+            $table->string('type')->nullable();
+            $table->string('model')->nullable();
+            $table->string('capacity')->nullable();
             $table->text('source')->nullable();
             $table->timestamps();
             $table->softDeletes();

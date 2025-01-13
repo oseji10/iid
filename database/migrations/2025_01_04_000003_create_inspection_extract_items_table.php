@@ -18,11 +18,7 @@ return new class extends Migration
             $table->text('fileNumber')->nullable();
             $table->text('natureOfBusiness')->nullable();
             $table->unsignedBigInteger('officerId')->nullable();
-            $table->string('brand')->nullable();
-            $table->string('type')->nullable();
-            $table->string('model')->nullable();
-            $table->text('source')->nullable();
-            $table->text('comment')->nullable();
+           
             $table->timestamps();
             $table->softDeletes();
 
